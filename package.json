@@ -9,27 +9,3 @@
     "express": "^4.18.2"
   }
 }
-```
-4. Click **"Commit changes"**
-
----
-
-## Paso 5 — Subir a Render
-
-1. Ve a **render.com**
-2. Click **"New"** → **"Web Service"**
-3. Conecta tu GitHub y selecciona `studioIA-server`
-4. Configura así:
-   - **Name:** `studioia-server`
-   - **Runtime:** `Node`
-   - **Build Command:** `npm install`
-   - **Start Command:** `node server.js`
-5. Baja hasta **"Environment Variables"**
-6. Click **"Add Environment Variable"**
-   - Key: `GEMINI_KEY`
-   - Value: `tu API key de Gemini` 🔑
-7. Click **"Create Web Service"**
-
-Render tardará ~2 minutos en desplegarse. Al final verás una URL así:
-```
-https://studioia-server.onrender.com
